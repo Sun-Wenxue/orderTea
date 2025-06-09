@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 400%;
+}
+.overview {
+    background-color: #434343;
+
+}
+.overview .img {
+    display: flex;
+    justify-content: center;
+}
+.overview .img .img-item {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 170px;
+    margin-right: 170px;
+    border-radius: 50px;
+}
+
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(20deg);}
+}
+
+.overview .img .img-item:hover {
+    animation: rotation 0.2s linear 1 forwards;
+}
+
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+input[type = "radio"] {
+    transform: scale(4);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+input[type = "number"] {
+    height: 50px;
+    width: 200px;
+    margin-left: 500px;
+    margin-right: 50px;
+}
