@@ -8,8 +8,8 @@
         {
             "type": "msedge",
             "request": "launch",
-            "name": "Open xidong.html",
-            "file": "d:\\SJTU\\workspace\\xidong\\xidong.html"
+            "name": "Open orderTea.html",
+            "file": "d:\\SJTU\\workspace\\orderTea\\orderTea.html"
         }
     ]
 }

@@ -35,7 +35,9 @@ body {
     display: flex;
     align-items: center;
 }
-
+.form-group label {
+    text-align: right;
+}
 input[type = "radio"] {
     transform: scale(4);
     margin-left: 50px;
