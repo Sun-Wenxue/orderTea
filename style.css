@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
 }
-body {
-    font-size: 400%;
-}
 .overview {
     background-color: #434343;
 
@@ -14,11 +11,12 @@ body {
     justify-content: center;
 }
 .overview .img .img-item {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 170px;
-    margin-right: 170px;
-    border-radius: 50px;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
 }
 
 @keyframes rotation {
@@ -30,23 +28,66 @@ body {
     animation: rotation 0.2s linear 1 forwards;
 }
 
-
+.main-content {
+    display: flex;
+    justify-content: center;
+}
 .form-group {
     display: flex;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .form-group label:first-child {
-    width: 500px;
+    width: 150px;
     text-align: right;
 }
 input[type = "radio"] {
-    transform: scale(4);
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-input[type = "number"] {
-    height: 50px;
-    width: 200px;
-    margin-left: 500px;
-    margin-right: 50px;
+input[type = "checkbox"] {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.ingredient{
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    line-height: 100%;
+}
+button[type = "submit"] {
+    background-color: dodgerblue;
+    color: white;
+    padding:8px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    margin-right: 5px;
+    
+}
+button[type = "reset"] {
+    background-color:lightgray;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    color: #434343;
+    font-size: small;
+    border: #434343 solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 4px;
 }

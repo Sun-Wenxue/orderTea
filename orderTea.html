@@ -3,6 +3,7 @@
 <head>
     <title>Xidong</title>
     <link rel = "stylesheet" type = "text/css" href = "style.css">
+    
 </head>
 <body>
     <div class = "overview">
@@ -14,7 +15,7 @@
         </div>
     </div>
     <div class = "main-content">
-        <form method = "post" action = "">
+        <form id = "order-form" method = "post" action = "">
             <div class = "form-group">
                 <label for = "flavor">奶茶口味：</label>
                 <input type = "radio" id = "flavor" name = "flavor" value = "芋泥波波" checked>
@@ -26,9 +27,99 @@
             </div>
             <div class = "form-group">
                 <label for = "num">几杯：</label>
-                <input type = "number">
+                <input type = "number" name = "num" required>
             </div>
-        </form>
+            <div class = "form-group">
+                <label for = "size">杯型：</label>
+                <input type = "radio" id = "size" name = "size" value = "超大杯" checked>
+                <label for = "超大杯">超大杯</label>
+                <input type = "radio" id = "size" name = "size" value = "大杯">
+                <label for = "大杯">大杯</label>
+                <input type = "radio" id = "size" name = "size" value = "中杯">
+                <label for = "中杯">中杯</label>
+            </div>
+            <div class = "form-group">
+                <label for = "sweetness">甜度：</label>
+                <select id = "sweetness" name = "sweetness">
+                    <option value = "1">无糖</option>
+                    <option value = "2">三分糖</option>
+                    <option value = "3">五分糖</option>
+                    <option value = "4" selected>全糖</option>
+                </select>
+            </div>
+            <div class = "form-group">
+                <label for = "ingredient-free">免费小料：</label>
+                <div class = "ingredient">
+                    <input type = "checkbox" id = "ingredient-free" name = "ingredient-free" value = "波霸">
+                    <label for = "波霸">波霸</label>
+                    <input type = "checkbox" id = "ingredient-free" name = "ingredient-free" value = "椰果">
+                    <label for = "椰果">椰果</label>
+                    <input type = "checkbox" id = "ingredient-free" name = "ingredient-free" value = "西米露">
+                    <label for = "西米露">西米露</label>
+                    <input type = "checkbox" id = "ingredient-free" name = "ingredient-free" value = "茶冻">
+                    <label for = "茶冻">茶冻</label>
+                    <input type = "checkbox" id = "ingredient-free" name = "ingredient-free" value = "红豆">
+                    <label for = "红豆">红豆</label>
+                    <input type = "checkbox" id = "ingredient-free" name = "ingredient-free" value = "仙草">
+                    <label for = "仙草">仙草</label>
+                </div>
+            </div>
+            <div class = "form-group">
+                <label for = "ingredient-paid">加价小料：</label>
+                <div class = "ingredient">
+                    <input type = "checkbox" id = "ingredient-paid" name = "ingredient-paid" value = "冰淇淋">
+                    <label for = "冰淇淋">冰淇淋（￥4）</label>
+                    <input type = "checkbox" id = "ingredient-paid" name = "ingredient-paid" value = "布丁">
+                    <label for = "布丁">布丁（￥3）</label>
+                    <input type = "checkbox" id = "ingredient-paid" name = "ingredient-paid" value = "奶霜">
+                    <label for = "奶霜">奶霜（￥2）</label>
+                </div>
+            </div>
+            <div class = "form-group">
+                <label for = "ice">是否加冰：</label>
+                <input type = "radio" id = "ice" name = "ice" value = "是" checked>
+                <label for = "是">是</label>
+                <input type = "radio" id = "ice" name = "ice" value = "否">
+                <label for = "否">否</label>
+            </div>
+            <div class = "form-group">
+                <label for = "tea">是否去茶底：</label>
+                <input type = "radio" id = "tea" name = "tea" value = "是" checked>
+                <label for = "是">是</label>
+                <input type = "radio" id = "tea" name = "tea" value = "否">
+                <label for = "否">否</label>
+            </div>
+            <div class = "form-group">
+                <label for = "address">你的地址：</label>
+                <textarea id = "address" name = "address" rows = "8" required></textarea>
+            </div>
+            <div class = "form-group">
+                <label for = "phone">你的手机号：</label>
+                <input type = "text" id = "phone" name = "phone" required>
+            </div>
+            <div class = "form-group">
+                <label for = "time">期待送达时间：</label>
+                <input type = "time" name = "time" required>
+            </div>
+            <div class = "form-group">
+                <label for = "remarks">备注：</label>
+                <textarea id = "remarks" name = "remarks" rows = "8"></textarea>
+            </div>
+            <div class = "form-group">
+                <label for = "payment">支付方式：</label>
+                <input type = "radio" id = "payment" name = "payment" value = "微信" checked>
+                <label for = "微信">微信支付</label>
+                <input type = "radio" id = "payment" name = "payment" value = "支付宝">
+                <label for = "支付宝">支付宝</label>
+                
+            </div>
+            <div class = "form-group">
+                <button type = "submit">提交</button>
+                <button type = "reset">重置</button>
+            </div>
+        </form> 
     </div>
+    <div class = "to-top">回到顶部</div>
+    <script src = "script.js"></script>
 </body>
 </html>
